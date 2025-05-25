@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chocolate Chip Cookies Recipe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Falling cookies container -->
+  <script>
+    const numCookies = 20;
+    for (let i = 0; i < numCookies; i++) {
+      const cookie = document.createElement('div');
+      cookie.className = 'falling-cookie';
+      cookie.style.left = Math.random() * 100 + 'vw';
+      cookie.style.animationDuration = (5 + Math.random() * 5) + 's';
+      cookie.style.animationDelay = Math.random() * 10 + 's';
+      document.body.appendChild(cookie);
+    }
+  </script>
+
+  <header>
+    <h1>🍪 Chocolate Chip Cookies 🍪</h1>
+    <p>Chef Kaushal Raya</p>
+  </header>
+
+  <div class="image-container">
+    <div class="image-block">
+      <img src="cooks.png" alt="Cookies" class="recipe-img" />
+      <p class="image-caption">🍪 Delicious homemade chocolate chip cookies 🍪</p>
+    </div>
+    <div class="image-block">
+      <img src="cookst.png" alt="Person" class="recipe-img" />
+      <p class="image-caption">Girls Being my cookie fan  ! I think ,I have cook enough for today 😋</p>
+    </div>
+    <div class="video_section">
+      <h2>📹 Watch the Recipe Video</h2>
+      <div class="video-container">
+        <iframe width ="500" height="315" src="https://youtu.be/3vUtRRZG0xY?si=jqc0s9I1tQcxMbzn" title="Chocolate Chip Cookies Recipe"  frameborder="0"  allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="section-container">
+    <div class="section-card">
+      <h2>🥣 Ingredients</h2>
+      <ul>
+        <li>1 cup butter, softened</li>
+        <li>1 cup white sugar</li>
+        <li>1 cup brown sugar</li>
+        <li>2 eggs</li>
+        <li>2 tsp vanilla extract</li>
+        <li>3 cups all-purpose flour</li>
+        <li>1 tsp baking soda</li>
+        <li>2 cups chocolate chips</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h2>📝 Instructions</h2>
+      <ol>
+        <li>Preheat oven to 350°F (175°C).</li>
+        <li>Cream together butter, sugars until smooth.</li>
+        <li>Beat in eggs one at a time, then vanilla.</li>
+        <li>Gradually blend in flour & baking soda.</li>
+        <li>Stir in chocolate chips.</li>
+        <li><mark>Drop by large spoonfuls onto ungreased pans.</mark></li>
+        <li>Bake for 10–12 minutes until golden.</li>
+      </ol>
+    </div>
+
+    <div class="section-card">
+      <h2>💡 Tips</h2>
+      <ul>
+        <li>Chill dough for 30 minutes for chewy cookies.</li>
+        <li>Try different chips or add nuts.</li>
+        <li>Store in airtight container for freshness.</li>
+      </ul>
+    </div>
+  </div>
+  <!-- Special Note -->
+<div class="special-note">
+  <h3>✨ Special Note from the Chef ✨</h3>
+  <p>Thank you for trying out my cookie recipe! Baking is more than a skill—it's a way to spread love and joy. Happy baking! 🍪💜</p>
+</div>
+
+  <div class="footer">
+    <img src="chef.png" alt="Chef Kaushal Raya" class="chef-img" />
+    <div class="footer-text">
+      <strong><em>Enjoy your delicious homemade chocolate chip cookies!</em></strong><br/>
+      <span>© 2025 Chef Kaushal Raya</span>
+    </div>
+  </div>
+</body>
+</html>
